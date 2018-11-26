@@ -6,3 +6,4 @@ test -z $commit_string && echo "Commit string is required." 1>&2 && exit 1
 
 git add .
 git commit -m $commit_string
+# hello

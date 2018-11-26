@@ -4,7 +4,7 @@ repo=$1
 # password=$2
 test -z $repo && echo "Repo name required." 1>&2 && exit 1
 
-curl -u 'ClarkWalker':'Fourgxqr12' https://api.github.com/user/repos -d "{\"name\":\"$repo\"}"
+curl -u 'ClarkWalker' https://api.github.com/user/repos -d "{\"name\":\"$repo\"}"
 
 git init
 git remote add origin "git@github.com:ClarkWalker/$repo.git"

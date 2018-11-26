@@ -8,5 +8,3 @@ curl -u 'ClarkWalker':'Fourgxqr12' https://api.github.com/user/repos -d "{\"name
 
 git init
 git remote add origin "git@github.com:ClarkWalker/$repo.git"
-git add .
-git commit -m "initial commit"

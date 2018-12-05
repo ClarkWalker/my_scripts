@@ -1,0 +1,10 @@
+#!/bin/sh
+
+repo=$1
+# password=$2
+test -z $repo && echo "Repo name required." 1>&2 && exit 1
+
+curl -u 'ClarkWalker' https://api.github.com/user/repos -d "{\"name\":\"$repo\"}"
+
+git init # I know it's safe but I just wanna comment it out anywayyyyyy.
+git remote add origin "git@github.com:ClarkWalker/$repo.git"

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+filename=$1
+
+
+test -z $filename && echo "file name required." 1>&2 && exit 1
+
+echo "\n\n\n\n\n\n\n\n\n\n\n\n";
+gcc -o "$filename.out" "$filename";
+"./$filename.out";

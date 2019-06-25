@@ -1,0 +1,3 @@
+#!/bin/sh
+
+nodemon -w ./ -x git-update-repo

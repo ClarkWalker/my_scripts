@@ -1,0 +1,10 @@
+#!/bin/sh
+
+commit_string=$1
+
+test -z $commit_string && echo "Commit string is required. Remember to use quotes to surround the string" 1>&2 && exit 1
+
+git add .
+git commit -m "$commit_string"
+git pull
+git push
